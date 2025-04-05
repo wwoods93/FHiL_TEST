@@ -1,0 +1,8 @@
+import fhil_constants
+
+
+
+
+
+STARTUP_LOG_DEFAULT_PATH = fhil_constants.STARTUP_LOG_DEFAULT_PATH
+GENERAL_LOG_DEFAULT_PATH = fhil_constants.GENERAL_LOG_DEFAULT_PATH

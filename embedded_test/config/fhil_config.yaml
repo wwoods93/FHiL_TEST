@@ -1,0 +1,28 @@
+# fhil_config.yaml
+# by wilson
+# 2025.03.08
+
+system_info:
+  name: fhil
+  version: 0.00.00
+  framework_version: 0.00.00
+  gui_version: 0.00.00
+
+system_config:
+    src_path_abs: FHIL_TEST/workspace/embedded_test/scripts/
+    src_path_rel: ../scripts/
+    config_path_abs: FHIL_TEST/workspace/embedded_test/config/
+    config_path_rel: ../config/
+    log_path_abs: FHIL_TEST/workspace/embedded_test/logs/
+    log_path_rel: ../logs/
+    fhil_config: fhil_config.yaml
+    instrument_config: instrument_config.yaml
+    startup_log: startup.log
+    fhil_log: fhil.log
+
+
+
+    use_file_log: 1
+    file_log_level: DEBUG
+    use_console_log: 1
+    console_log_level: DEBUG

@@ -1,0 +1,24 @@
+
+INSTRUMENT_0:
+  name: scope_0
+  id: 0x00
+  make: RIGOL
+  model: DHO924S
+  channels: 4
+  ip: 192.168.1.100
+
+INSTRUMENT_1:
+  name: fg_0
+  id: 0x01
+  make: SIGLENT
+  model: SDG2042X
+  channels: 2
+  ip: 192.168.1.101
+
+INSTRUMENT_2:
+  name: dmm_0
+  id: 0x02
+  make: SIGLENT
+  model: SDM3065X
+  channels: 2
+  ip: 192.168.1.102
