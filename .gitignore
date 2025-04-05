@@ -1,0 +1,33 @@
+
+# bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# env directories
+.venv/
+env/
+
+# cache files
+*.pyc
+__pycache__/
+
+pip-log.txt
+pip-delete-this-directory.txt
+
+# output files
+*.cover
+*.log
+*.pot
+*.pyc
+*.pyo
+
+# package distribution files
+*.egg
+*.egg-info
+dist/
+build/
+
+# vscode
+.vscode/
+.idea/
