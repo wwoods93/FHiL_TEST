@@ -8,6 +8,8 @@ class scope_id_t:
 
 @dataclass
 class channel_id_t:
+    NAME: str
+    ID: int
 
 
 DHO914  = scope_id_t(NAME = "dho914",    ID = 0x00)
@@ -19,7 +21,7 @@ DHO924S = scope_id_t(NAME = "dho924s",   ID = 0x03)
 
 
 
-p rint(DHO914.NAME)
+print(DHO914.NAME)
 print ('\n')
 
 
