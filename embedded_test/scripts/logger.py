@@ -1,4 +1,5 @@
 import logging
+import traceback
 from queue import PriorityQueue
 import logger_constants
 from observer import ObserverAbstract
@@ -47,9 +48,19 @@ class Logger(ObserverAbstract):
         elif message_type is WARNING:
             self.warning(message)
         elif message_type is ERROR:
-            self.error(message)
+            depth = 2
+            stack = traceback.extract_stack()[:-1]
+            relevant = stack[-depth:]
+            trace_info = '::'.join(f'{frame.name}()' for frame in relevant)
+            trace_str = f'**minor fault trace** {trace_info}'
+            self.error(message + '\n\t' + trace_str)
         elif message_type is EXCEPTION:
-            self.exception(message)
+            depth = 2
+            stack = traceback.extract_stack()[:-1]
+            relevant = stack[-depth:]
+            trace_info = '::'.join(f'{frame.name}()' for frame in relevant)
+            trace_str = f'**runtime exception trace** {trace_info}'
+            self.exception(message + '\n\t' + trace_str)
 
 
     def debug(self, message):
