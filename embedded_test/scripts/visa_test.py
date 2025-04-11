@@ -1,4 +1,4 @@
-import pyvisa
+import pyvisa # type: ignore
 print(pyvisa.__version__)
 
 # from gpib_ctypes import gpib
